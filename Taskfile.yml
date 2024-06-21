@@ -1,0 +1,21 @@
+version: '3'
+
+env:
+  DOCKER_IMAGE_NAME: thevops/youtube-tracker:v1.0.0
+
+tasks:
+  #
+  # Local development
+  #
+  start:
+    desc: Start the app
+    cmds:
+      - bun run src/index.ts config/production.yaml
+
+  #
+  # Build
+  #
+  docker-build:
+    desc: Build the app as Docker image
+    cmds:
+      - docker buildx build --platform linux/arm64 --tag ${DOCKER_IMAGE_NAME} --push .

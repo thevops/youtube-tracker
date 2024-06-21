@@ -1,0 +1,14 @@
+---
+services:
+  app:
+    # image: thevops/youtube-tracker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - bun
+      - src/index.ts
+      - /config/production.yaml
+    restart: unless-stopped
+    volumes:
+      - ./config/production.yaml:/config/production.yaml:ro

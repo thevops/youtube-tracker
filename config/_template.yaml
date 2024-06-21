@@ -1,0 +1,29 @@
+log_level: info
+frequency: 30 # minutes
+raindrop_token: "..."
+raindrop_collection_id: "..."
+feeds:
+  - name: DevOpsToolkit
+    channel_id: UCfz8x0lVzJpb_dgWm9kPVrw
+  - name: Mateusz Chrobok
+    channel_id: UCTTZqMWBvLsUYqYwKTdjvkw
+  - name: Wolność w Remoncie
+    channel_id: UC_1U2qs9zaBrO4_zvvFf2BQ
+  - name: Klub Jegielloński
+    channel_id: UCtduOnyNZmXf4xZ5o56lg6w
+  - name: Szymon Mówi
+    channel_id: UCnUrMqV57fp3uPddvmDpTaA
+  - name: Wojna Idei
+    channel_id: UC7RswyY8VfbSdikz_8wdp3w
+  - name: Rafał Otoka
+    channel_id: UCo2rfn3xQF1HsrCju0-DKtw
+  - name: Poszukiwacz
+    channel_id: UCzvaTqqDP1lE0iUuoExpijw
+  - name: SysOpsDevOpsPolska
+    channel_id: UCQ8D7kwvZJxQdy70vYZCf7w
+  - name: UwTeamMrugalski
+    channel_id: UCRHXKLPXE-hYh0biKr2DGIg
+  - name: Sławomir Mentzen
+    channel_id: UCkH8DpG5uKx0YsGCFWmOQcA
+  - name: Program Pierwszy Polskiego YouTube'a
+    channel_id: UCM5zgRhkZatwLsK-Z-TyisQ
