@@ -11,6 +11,15 @@ tasks:
     desc: Start the app
     cmds:
       - bun run src/index.ts config/production.yaml
+    env:
+      NODE_ENV: production
+
+  run-script:
+    desc: Run a single script
+    cmds:
+      - bun {{.CLI_ARGS}}
+    env:
+      NODE_ENV: production
 
   #
   # Build

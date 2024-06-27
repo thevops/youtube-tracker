@@ -7,9 +7,9 @@ async function main() {
   for (const feed of Config.feeds) {
     logger.debug(`Checking feed: ${feed.name}`);
 
-    // Get current time minus the frequency (minutes) plus a buffer of 5 minutes
+    // Get current time and subtract the frequency time (plus 5 minutes more as a buffer) in minutes
     const previous_check = new Date(
-      Date.now() - Config.frequency * 60000 + 5 * 60000,
+      Date.now() - (Config.frequency + 5) * 60000,
     );
     logger.debug(`Previous check: ${previous_check.toISOString()}`);
 

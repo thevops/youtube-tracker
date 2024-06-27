@@ -1,6 +1,6 @@
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
-FROM oven/bun:1.1.4-alpine as base
+FROM oven/bun:1.1.4-alpine AS base
 
 # install dependencies into temp directory
 # this will cache them and speed up future builds
@@ -12,7 +12,7 @@ RUN cd /temp/prod && bun install --frozen-lockfile --production
 
 
 # final image
-FROM base as release
+FROM base AS release
 
 RUN apk add -q --progress --update --no-cache dumb-init
 
