@@ -1,3 +1,4 @@
+import type { RaindropItem } from "raindrop-api";
 import { logger, Config, raindropAPI } from "./config";
 import { getNewerYouTubeVideos } from "./youtube";
 
@@ -25,10 +26,13 @@ async function main() {
     logger.debug(`Found ${new_videos.length} new videos`);
     for (const video of new_videos) {
       logger.info(`Adding video to Raindrop: ${video.link}`);
-      const res = await raindropAPI.addItem_link(
-        Config.raindrop_collection_id,
-        video.link,
-      );
+      const item: RaindropItem = {
+        link: video.link,
+        collection: {
+          $id: Number(Config.raindrop_collection_id),
+        }
+      }
+      const res = await raindropAPI.addItem(item);
       if (res) {
         logger.info("Video added successfully");
       } else {
