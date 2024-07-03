@@ -2,7 +2,7 @@ log_level: info
 frequency: 30 # minutes
 raindrop_token: "..."
 raindrop_collection_id: "..."
-cache_file_path: "cache.json"
+cache_file_path: "/data/cache.json"
 feeds:
   - name: DevOpsToolkit
     channel_id: UCfz8x0lVzJpb_dgWm9kPVrw

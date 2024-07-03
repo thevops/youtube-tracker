@@ -177,3 +177,4 @@ dist
 # Custom
 config/*.yaml
 !config/_template.yaml
+data/

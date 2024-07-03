@@ -12,3 +12,4 @@ services:
     restart: unless-stopped
     volumes:
       - ./config/production.yaml:/config/production.yaml:ro
+      - ./data:/data
