@@ -2,17 +2,21 @@
   "name": "youtube-tracker",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/js-yaml": "^4.0.9"
+    "@types/js-yaml": "^4.0.9",
+    "prettier": "^3.3.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "rss-parser": "^3.13.0",
     "raindrop-api": "https://github.com/thevops/raindrop-api#v1.1.0",
+    "rss-parser": "^3.13.0",
     "simple-fmt-logger": "https://github.com/thevops/simple-fmt-logger#v1.1.3"
   }
 }

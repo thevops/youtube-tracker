@@ -14,6 +14,7 @@ interface ConfigSchema {
   frequency: number;
   raindrop_token: string;
   raindrop_collection_id: string;
+  cache_file_path: string;
 
   [key: string]: any;
 }
@@ -25,6 +26,7 @@ function validateConfig(config: ConfigSchema) {
     "frequency",
     "raindrop_token",
     "raindrop_collection_id",
+    "cache_file_path",
   ];
 
   for (const field of requiredFields) {
