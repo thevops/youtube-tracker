@@ -3,8 +3,8 @@
 Monitor YouTube channels using **RSS feeds**,
 and add new videos to a **collection in Raindrop.io**.
 
-The applications is running in a loop, checking for new videos every X minutes (frequency).
-Each run will add new videos uploaded since the last run (current time - frequency).
+The application runs in a loop, checking for new videos every X minutes (frequency).
+Each run will add new videos uploaded since the last run (the cache file contains video IDs from the previous run).
 
 ## Usage
 
