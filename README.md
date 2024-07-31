@@ -45,7 +45,8 @@ docker compose up -d
 ```
 
 > [!NOTE]
-> Public image is available at https://hub.docker.com/r/thevops/youtube-tracker
+> Public image is available at
+> https://github.com/thevops/youtube-tracker/pkgs/container/youtube-tracker
 
 ## 🧾 Configuration
 
