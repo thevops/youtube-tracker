@@ -23,21 +23,28 @@ Each run will add new videos uploaded since the last run
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
 
 ```shell
 git clone https://github.com/thevops/youtube-tracker
 cd youtube-tracker
 ```
 
-2. Copy the configuration template and edit it:
+### 2. Copy the configuration template and edit it:
 
 ```shell
 cp config/_template.yaml config/production.yaml
 # Edit config/production.yaml with your preferred settings
 ```
 
-3. Build and start the application using Docker Compose:
+#### Find YouTube channel ID with the following command:
+
+```shell
+# Replace the URL with the channel URL
+curl -s https://www.youtube.com/@DevOpsToolkit | grep -oP '(?<=/channel/)[\w-]+' | sort | uniq
+```
+
+### 3. Build and start the application using Docker Compose:
 
 ```shell
 docker compose build
