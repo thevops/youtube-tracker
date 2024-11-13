@@ -37,6 +37,9 @@ cp config/_template.yaml config/production.yaml
 # Edit config/production.yaml with your preferred settings
 ```
 
+- `raindrop_token` - [how to create a token?](./docs/raindrop.md#how-to-create-a-token)
+- `raindrop_collection_id` - [how to find a collection ID?](./docs/raindrop.md#how-to-find-a-collection-id)
+
 #### Find YouTube channel ID with the following command:
 
 ```shell
